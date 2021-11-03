@@ -11,7 +11,9 @@ app.on('ready',() => {
 				enableRemoteModule: true
 			}
 	})
-	win.loadFile('index.html')
+	require('@electron/remote/main').initialize()
+	require('@electron/remote/main').enable(win.webContents)
+	win.loadFile('../index.html')
 	app.on('closed',() => {
 		  app.exit()
 		  win = null
