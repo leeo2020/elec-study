@@ -1,0 +1,15 @@
+{
+  "name": "elec-study",
+  "version": "1.0.0",
+  "main": "index.ts",
+  "repository": "https://github.com/leeo2020/elec-study.git",
+  "author": "leeo2020 <3145875098@qq.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "electron ./index.js"
+  },
+  "devDependencies": {
+    "electron": "^15.3.0",
+    "typescript": "^4.4.4"
+  }
+}
